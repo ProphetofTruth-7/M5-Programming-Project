@@ -9,6 +9,8 @@ private:
 public:
 	BasicShape(string n, double area) : name(n), area(a) {}
 
+	virtual void doesExist() = 0;
+
 	double getArea() {
 		return area;
 	}
