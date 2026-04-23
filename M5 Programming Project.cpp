@@ -32,9 +32,37 @@ public:
 
 
 	void printInfo() {
-		cout << "Employee Name: " << name << endl;
-		cout << "Employee ID: " << id << endl;
-		cout << "Employee Hire Date: " << hireDate << endl;
+		cout << "Employee Name: " << getName() << endl;
+		cout << "Employee ID: " << getID() << endl;
+		cout << "Employee Hire Date: " << getHireDate() << endl;
+	}
+};
+
+class ProductionWorker : public Employee {
+private:
+	int shift;
+	double pay;
+public:
+	ProductionWorker(int s, double p, string n, int i, string h) : Employee(n, i, h), shift(s), pay(p) {}
+
+	int getShift() {
+		return shift;
+	}
+	double getPay() {
+		return pay;
+	}
+
+	void setShift(int x) {
+		shift = x;
+	}
+	double getPay(double x) {
+		pay = x;
+	}
+
+	void printProductionInfo() {
+		printInfo();
+		cout << "Shift: " << getShift() << endl;
+		cout << "Pay: $" << getPay() << endl;
 	}
 };
 
@@ -43,8 +71,8 @@ public:
 int main() {
 	cout << "Welcome to the Factory Workers Subproject!" << endl;
 
-	Employee emp("John Madden", 348392, "04/02/2007");
-	emp.printInfo();
+	ProductionWorker emp(1, 20.35, "John Madden", 348392, "04/02/2007");
+	emp.printProductionInfo();
 	
 	return 0;
 }
