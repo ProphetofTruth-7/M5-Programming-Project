@@ -1,4 +1,12 @@
-// This is the Factory Workers Subproject
+/*
+ * FactoryWorker Subproject
+ * ------------------------------------------------------------
+ * This prints the information of four members of a Factory, utilizing inheritance to reduce code strain and increase readability
+ *
+ * The program relies upon attached Header and .cpp files, and is a OOP work.
+ *
+
+ */
 #include <iostream>
 using namespace std;
 
