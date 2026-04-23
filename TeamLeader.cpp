@@ -28,4 +28,5 @@
 		std::cout << "Monthly Bonus: $" << getMonthlyBonus() << std::endl;
 		std::cout << "Required Training Hours: " << getRequiredTraining() << std::endl;
 		std::cout << "Training Hours Attended: " << getActualTraining() << std::endl;
+		std::cout << std::endl;
 	}

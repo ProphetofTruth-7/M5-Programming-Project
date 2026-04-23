@@ -21,4 +21,5 @@ ShiftSupervisor::ShiftSupervisor(std::string n, int i, std::string h, double s, 
 		printInfo();
 		std::cout << "Salary: $" << getSalary() << std::endl;
 		std::cout << "Bonus: $" << getBonus() << std::endl;
+		std::cout << std::endl;
 	}

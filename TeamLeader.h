@@ -8,7 +8,7 @@ private:
 	double reqTraining;
 	double actualTraining;
 public:
-	TeamLeader(std::string n, int i, std::string h, int s, double p, double b, double rt, double at) : ProductionWorker(n, i, h, s, p), monthlyBonus(b), reqTraining(rt), actualTraining(at) {}
+	TeamLeader(std::string n, int i, std::string h, int s, double p, double b, double rt, double at);
 
 	double getMonthlyBonus();
 	double getRequiredTraining();
