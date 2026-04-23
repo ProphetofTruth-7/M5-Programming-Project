@@ -12,7 +12,7 @@ ShiftSupervisor::ShiftSupervisor(std::string n, int i, std::string h, double s, 
 	void ShiftSupervisor::setSalary(double x) {
 		salary = x;
 	}
-	double ShiftSupervisor::setBonus(double x) {
+	void ShiftSupervisor::setBonus(double x) {
 		bonus = x;
 	}
 

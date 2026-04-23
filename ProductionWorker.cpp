@@ -13,7 +13,7 @@
 	void ProductionWorker::setShift(int x) {
 		shift = x;
 	}
-	double ProductionWorker::setPay(double x) {
+	void ProductionWorker::setPay(double x) {
 		pay = x;
 	}
 

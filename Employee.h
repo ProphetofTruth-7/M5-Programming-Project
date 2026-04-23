@@ -30,7 +30,7 @@ public:
 * Postconditions:
 *   - getName returns the stored name to the call point
 */
-	std::string getName() {}
+	std::string getName();
 /*
 * getHireDate
 * ------------------------------------------------------------
@@ -47,7 +47,7 @@ public:
 * Postconditions:
 *   - getHireDate returns the stored date to the call point
 */
-	std::string getHireDate() {}
+	std::string getHireDate();
 /*
 * getID
 * ------------------------------------------------------------
@@ -64,7 +64,7 @@ public:
 * Postconditions:
 *   - getID returns the stored ID to the call point
 */
-	int getID() {}
+	int getID();
 
 /*
 * setName
@@ -82,7 +82,7 @@ public:
 * Postconditions:
 *   - name is changed to reflect the given x value
 */
-	void setName(std::string x) {}
+	void setName(std::string x);
 /*
 * setHireDate
 * ------------------------------------------------------------
@@ -99,7 +99,7 @@ public:
 * Postconditions:
 *   - hireDate is changed to reflect the given x value
 */
-	void setHireDate(std::string x) {}
+	void setHireDate(std::string x);
 /*
 * setID
 * ------------------------------------------------------------
@@ -116,7 +116,7 @@ public:
 * Postconditions:
 *   - id is changed to reflect the given x value
 */
-	void setID(int x) {}
+	void setID(int x);
 
 /*
 * printInfo
@@ -134,7 +134,7 @@ public:
 * Postconditions:
 *   - A collated report is printed
 */
-	void printInfo() {}
+	void printInfo();
 };
 
 #endif

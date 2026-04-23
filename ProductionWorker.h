@@ -7,15 +7,15 @@ private:
 	int shift;
 	double pay;
 public:
-	ProductionWorker(std::string n, int i, std::string h, int s, double p) : Employee(n, i, h), shift(s), pay(p) {}
+	ProductionWorker(std::string n, int i, std::string h, int s, double p);
 
-	int getShift() {}
-	double getPay() {}
+	int getShift();
+	double getPay();
 
-	void setShift(int x) {}
-	double setPay(double x) {}
+	void setShift(int x);
+	void setPay(double x);
 
-	void printProductionInfo() {}
+	void printProductionInfo();
 };
 
 #endif

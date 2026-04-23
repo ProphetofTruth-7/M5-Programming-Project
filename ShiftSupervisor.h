@@ -7,15 +7,15 @@ private:
 	double salary;
 	double bonus;
 public:
-	ShiftSupervisor(std::string n, int i, std::string h, double s, double b) : Employee(n, i, h), salary(s), bonus(b) {}
+	ShiftSupervisor(std::string n, int i, std::string h, double s, double b);
 
-	double getSalary() {}
-	double getBonus() {}
+	double getSalary();
+	double getBonus();
 
-	void setSalary(double x) {}
-	double setBonus(double x) {}
+	void setSalary(double x);
+	void setBonus(double x);
 
-	void printSupervisorInfo() {}
+	void printSupervisorInfo();
 };
 
 #endif
