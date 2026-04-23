@@ -18,6 +18,7 @@
 	}
 
 	void ProductionWorker::printProductionInfo() {
+		std::cout << "Production Worker Information:" << std::endl;
 		printInfo();
 		std::cout << "Shift: " << getShift() << std::endl;
 		std::cout << "Pay: $" << getPay() << std::endl;

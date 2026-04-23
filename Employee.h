@@ -11,7 +11,7 @@ private:
 	std::string hireDate;
 public:
 	// Constructor //
-	Employee(std::string n, int i, std::string h) : name(n), id(i), hireDate(h) {}
+	Employee(std::string n, int i, std::string h);
 
 	// Function Prototypes/Documentation //
 /*
@@ -138,4 +138,3 @@ public:
 };
 
 #endif
-

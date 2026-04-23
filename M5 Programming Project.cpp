@@ -131,6 +131,7 @@ public:
 	}
 
 	void printLeaderInfo() {
+		cout << "Team Leader Information:" << endl;
 		printProductionInfo();
 		cout << "Monthly Bonus: $" << getMonthlyBonus() << endl;
 		cout << "Required Training Hours: " << getRequiredTraining() << endl;
@@ -143,8 +144,14 @@ public:
 int main() {
 	cout << "Welcome to the Factory Workers Subproject!" << endl;
 
-	TeamLeader emp("John Madden", 348392, "04/02/2007", 1, 24, 50, 20, 18);
-	emp.printLeaderInfo();
+	TeamLeader teamleader("John Madden", 348392, "09/24/2020", 1, 24, 50, 20, 18);
+	teamleader.printLeaderInfo();
+
+	ShiftSupervisor shiftsupervisor("Laia Stepah", 384429, "04/02/2007", 50000, 1000);
+	shiftsupervisor.printSupervisorInfo();
+
+	ProductionWorker productionworker("Steven Dell", 103469, "04/23/2025", 1, 12.50);
+	productionworker.printProductionInfo();
 	
 	return 0;
 }
