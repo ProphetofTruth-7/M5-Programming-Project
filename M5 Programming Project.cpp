@@ -133,6 +133,7 @@ int main() {
 	BasicShape* bs1 = &shape;
 	BasicShape* bs2 = &shape2;
 	BasicShape* bs3 = &shape3;
+	shape3.setSide(10);
 
 	cout << "The Area of the Circle is: " << bs1->getArea() << endl;
 	cout << "The Area of the Rectangle is: " << bs2->getArea() << endl;
