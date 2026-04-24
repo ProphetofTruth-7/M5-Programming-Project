@@ -1,5 +1,4 @@
 #include "BasicShape.h"
-#include <string>
 
 	void BasicShape::setArea(double x) {
 		area = x;

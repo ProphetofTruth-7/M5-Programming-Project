@@ -1,5 +1,4 @@
 #include "Rectangle.h"
-#include <string>
 
 Rectangle::Rectangle(std::string n, double a, double l, double w) : BasicShape("Rectangle", 0), length(l), width(w) {
 	setName("Rectangle");

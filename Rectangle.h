@@ -1,6 +1,5 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
-#include <string>
 #include "BasicShape.h"
 
 class Rectangle : public BasicShape {

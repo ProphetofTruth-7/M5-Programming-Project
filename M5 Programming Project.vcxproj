@@ -130,10 +130,12 @@
     <ClCompile Include="BasicShape.cpp" />
     <ClCompile Include="M5 Programming Project.cpp" />
     <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Square.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicShape.h" />
     <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Square.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
