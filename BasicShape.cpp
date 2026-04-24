@@ -7,6 +7,10 @@
 		name = x;
 	}
 
+	BasicShape::~BasicShape() {};
+
+	void BasicShape::calcArea() {};
+
 	BasicShape::BasicShape(std::string n, double a) : name(n), area(a) {}
 
 	double BasicShape::getArea() const {
