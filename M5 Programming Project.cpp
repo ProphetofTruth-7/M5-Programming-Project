@@ -127,13 +127,16 @@ public:
 
 int main() {
 	Circle shape("Circle", 0, 5, 6, 10);
-	cout << "The Area of the Circle is: " << shape.getArea() << endl;
-
 	Rectangle shape2("Rectangle", 0, 5, 9);
-	cout << "The Area of the Rectangle is: " << shape2.getArea() << endl;
-
 	Square shape3(5);
-	cout << "The Area of the Square is: " << shape3.getArea() << endl;
+
+	BasicShape* bs1 = &shape;
+	BasicShape* bs2 = &shape2;
+	BasicShape* bs3 = &shape3;
+
+	cout << "The Area of the Circle is: " << bs1->getArea() << endl;
+	cout << "The Area of the Rectangle is: " << bs2->getArea() << endl;
+	cout << "The Area of the Square is: " << bs3->getArea() << endl;
 
 	return 0;
 }
