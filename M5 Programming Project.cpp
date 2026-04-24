@@ -1,4 +1,14 @@
-// This is the Basic Shapes Subbranch!
+/*
+ * Basic Shape Class Subproject
+ * ------------------------------------------------------------
+ * This program creates a series of derived shape classes and calculates their areas.
+ * 
+ * It then prints those values in a collated report.
+ *
+ * The program relies upon attached Header and .cpp files, and is a OOP work. It relies heavily on Polymorphism and the use of Virtual Functions and Inheritance
+ *
+
+ */
 using namespace std;
 #include <string>
 #include <iostream>
