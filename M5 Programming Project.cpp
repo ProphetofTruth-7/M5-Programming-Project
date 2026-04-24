@@ -7,23 +7,25 @@ class BasicShape {
 private:
 	double area;
 	string name;
-public:
-	BasicShape(string n, double a) : name(n), area(a) {}
-
-	virtual void calcArea() = 0;
-
-	double getArea() {
-		return area;
-	}
-	string getName() {
-		return name;
-	}
-
+protected:
 	void setArea(double x) {
 		area = x;
 	}
 	void setName(string x) {
 		name = x;
+	}
+public:
+	BasicShape(string n, double a) : name(n), area(a) {}
+
+	virtual ~BasicShape() {}
+
+	virtual void calcArea() = 0;
+
+	double getArea() const {
+		return area;
+	}
+	const string getName() const {
+		return name;
 	}
 
 };
@@ -38,15 +40,15 @@ public:
 		calcArea();
 	}
 
-	void calcArea() {
+	void calcArea() override {
 		double a = length * width;
 		setArea(a);
 	}
 
-	double getLength() {
+	double getLength() const {
 		return length;
 	}
-	double getWidth() {
+	double getWidth() const {
 		return width;
 	}
 
@@ -70,7 +72,7 @@ public:
 		calcArea();
 	}
 
-	double getSide() {
+	double getSide() const {
 		return side;
 	}
 
@@ -94,19 +96,19 @@ public:
 		calcArea();
 	}
 
-	void calcArea() {
+	void calcArea() override {
 		const double PI = 3.141592653589;
 		double a = PI * (radius * radius);
 		setArea(a);
 	}
 
-	double getxCenter() {
+	double getxCenter() const {
 		return xCenter;
 	}
-	double getyCenter() {
+	double getyCenter() const {
 		return yCenter;
 	}
-	double getRadius() {
+	double getRadius() const {
 		return radius;
 	}
 
